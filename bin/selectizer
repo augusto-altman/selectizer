@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+"use strict";
+var path = require('path');
+var fs = require('fs');
+var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+
+var gen = require(lib+'/selectizer.js');
+
+if(process.argv.length > 2) 
+	gen(process.argv[2], process.argv[3]);
+else
+	console.log("Pass the object name");

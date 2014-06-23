@@ -1,0 +1,27 @@
+{
+  "author": "Altman Augusto",
+  "name": "selectizer",
+  "description": "Generate a compiled js from a selected set of other javascript files, solving the dependencies.",
+  "version": "0.1.4",
+  "repository": {
+    "url": ""
+  },
+  "main": "./lib/selectizer",
+  "keywords": [
+    "modularization",
+    "modules",
+    "compile",
+    "build",
+    "dependencies"
+  ],
+  "bin": {
+    "selectizer": "./bin/selectizer"
+  },
+  "dependencies": {
+    "mkdirp": "~0.3.4",
+    "requirejs": "~2.1.4"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
