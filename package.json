@@ -4,7 +4,7 @@
   "description": "Generate a compiled js from a selected set of other javascript files, solving the dependencies.",
   "version": "0.1.4",
   "repository": {
-    "url": ""
+    "url": "https://github.com/augusto-altman/selectizer"
   },
   "main": "./lib/selectizer",
   "keywords": [
@@ -12,7 +12,10 @@
     "modules",
     "compile",
     "build",
-    "dependencies"
+    "dependencies",
+    "select",
+    "file selection",
+    "build tool"
   ],
   "bin": {
     "selectizer": "./bin/selectizer"

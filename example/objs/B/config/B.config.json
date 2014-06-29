@@ -1,0 +1,9 @@
+{
+    "paths": {
+        "parser": "helpers/parser",
+        "internalB": "variables/internalB"
+    },
+    "dependencies": [
+        "interpreter/execute"
+    ]
+}
