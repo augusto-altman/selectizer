@@ -1,7 +1,7 @@
 Selectizer build tool
 =============
 
-Based on the [Modernizr](https://github.com/Modernizr/Modernizr) build process, Selectizer is a build tool made for [Node.js](http://nodejs.org/) that compile javascript projects. It allows the developer to divide an entire project into small javascript files (modules) and then select what pieces of code to include in a specific "build", resolving the dependencies automatically (using the [Requirejs's optimization tool](http://requirejs.org/docs/optimization.html)). The final effect is _like_ all the selected files concatenated.
+Based on the [Modernizr](https://github.com/Modernizr/Modernizr) build process, Selectizer is a build tool made for [Node.js](http://nodejs.org/) that compile javascript projects. It allows the developer to divide an entire project into small javascript files (modules) and then select what pieces of code to include in a specific "build", resolving the dependencies automatically (using the [Requirejs's optimization tool](http://requirejs.org/docs/optimization.html)). The final effect is to get all the selected files (and its dependencies) concatenated into one big deliverable javascript.
 
 This tool gives adds to the development process two great advantages:
 
@@ -27,9 +27,9 @@ One important thing to mention is that, at this moment, there is one **big const
 
 That having said, you can use the Selectizer build tool from the comand line as well as a node module (using _require_). In both cases it recieves two arguments (specified in order):
 
-*   **The name of the object you want to build**: Selectizer will always look for a folder named just as the object you want to build. Inside this folder must be a _config_ sub-folder from where Selectizer can obtain the configuration files, and a _src_ sub-folder with all the javascript files (modules) that composes the object.
+*   **The name of the object you want to build (from now on _object folder_)**: Selectizer will always look for a folder named just as the object you want to build. Inside this folder must be a _config_ sub-folder from where Selectizer can obtain the configuration files, and a _src_ sub-folder with all the javascript files (modules) that composes the object.
 
-*   **Tha path of a folder containing all the object folders**: This path must always be relative to the root path of your project. Selectizer will look for any object folder inside this path.
+*   **Tha path of a folder containing all the object folders**: This path must be always relative to the root path of your project. Selectizer will look for any object folder inside this path.
 
 After you generate your build it will be located in the _build_ sub-folder of the object folder.
 
@@ -87,7 +87,7 @@ So, for example, if you want to build the _A_ object using the command line, you
 selectizer A objs. 
 ```
 
-Remember that, in node, to execute a command downloaded with _npm_, you must to execute it from _node\_modules/.bin_
+Remember that, in node, to execute a command downloaded with _npm_, you must to execute it from _node\_modules/.bin_. Also remember that with selectizer the second argument is a path that is always relative to your project's root directory.
 
 If you want to use it as a node module then you should do this:
 
