@@ -81,13 +81,17 @@ As you can see the directory arrangment is very important in order to build effe
 
 I have created and commited these entire sample directory inside the _example_ folder of this repo, so download it, check it out, and follow the instructions below. You can play with it.
 
-So, for example, if you want to build the _A_ object using the command line, you should execute:
+So, for example, if you want to build the _A_ object using the command line, you should execute (only if you move them _example_ root to your project's root directory):
 
-```$
+```shell
 selectizer A objs. 
 ```
 
-Remember that, in node, to execute a command downloaded with _npm_, you must to execute it from _node\_modules/.bin_. Also remember that with selectizer the second argument is a path that is always relative to your project's root directory.
+Remember that, in node, to execute a command downloaded with _npm_, you must to execute it from _node\_modules/.bin_. Also remember that with selectizer the second argument is a path that is always relative to your project's root directory. **Tip**: if you are trying to execute this example just after the _npm install selectizer_ and you haven't moved the _example_ folder to your project's root directory then you should execute:
+
+```shell
+selectizer A node_modules/selectizer/example/objs
+```
 
 If you want to use it as a node module then you should do this:
 
