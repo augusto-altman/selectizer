@@ -14,8 +14,8 @@ How to install it?
 
 It is avaible in [npm](https://www.npmjs.org/package/selectizer)
 
-```$
-npm install selectizer
+```shell
+$ npm install selectizer
 ```
 
 How to use it?
@@ -51,46 +51,47 @@ Example
 
 As you can see the directory arrangment is very important in order to build effective projects. So lets define our properly set folder arrangment.
 
--   root
-    -   objs
-        -   A
-            -   config
-                -   A.initCode.js
-                -   A.config.json
-            -   src
-                -   utils
-                    -   ajaxPost.js
-                    -   ajaxGet.js
-                -   restCommunication
-                    -   callXApi.js
-                    -   callYApi.js
-                -   vars
-                    -   a_.js
-        -   B
-            -   config
-                -   B.initCode.js
-                -   B.config.json
-            -   src
-                -   helpers
-                    -   parser.js
-                -   interpreter
-                    -   getCode.js
-                    -   execute.js
-                -   variables
-                    -   internalB.js
+    .
+    └── objs
+        ├── A
+        |   ├── config
+        |   |   ├── A.initCode.js
+        |   |   └── A.config.json
+        |   └── src
+        |       ├── utils
+        |       |   ├── ajaxPost.js
+        |       |   └── ajaxGet.js
+        |       ├── restCommunication
+        |       |   ├── callXApi.js
+        |       |   └── callYApi.js
+        |       └── vars
+        |           └── a_.js
+        └── B
+            ├── config
+            |   ├── B.initCode.js
+            |   └── B.config.json
+            └── src
+                ├── helpers
+                |   └── parser.js
+                ├── interpreter
+                |   ├── getCode.js
+                |   └── execute.js
+                └── variables
+                    └── internalB.js
+
 
 I have created and commited these entire sample directory inside the _example_ folder of this repo, so download it, check it out, and follow the instructions below. You can play with it.
 
 So, for example, if you want to build the _A_ object using the command line, you should execute (only if you move them _example_ root to your project's root directory):
 
 ```shell
-selectizer A objs. 
+$ selectizer A objs. 
 ```
 
 Remember that, in node, to execute a command downloaded with _npm_, you must to execute it from _node\_modules/.bin_. Also remember that with selectizer the second argument is a path that is always relative to your project's root directory. **Tip**: if you are trying to execute this example just after the _npm install selectizer_ and you haven't moved the _example_ folder to your project's root directory then you should execute:
 
 ```shell
-selectizer A node_modules/selectizer/example/objs
+$ selectizer A node_modules/selectizer/example/objs
 ```
 
 If you want to use it as a node module then you should do this:
@@ -98,6 +99,13 @@ If you want to use it as a node module then you should do this:
 ```JavaScript
 var gen = require('selectizer');
 gen('A', 'objs');
+```
+
+The same tip mentioned before is aplicable here:
+
+```JavaScript
+var gen = require('selectizer');
+gen('A', 'node_modules/selectizer/example/objs');
 ```
 
 After execute this stuff you will find the build in _objs/A/build/A.js_
