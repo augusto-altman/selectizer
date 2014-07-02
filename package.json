@@ -2,7 +2,7 @@
   "author": "Altman Augusto",
   "name": "selectizer",
   "description": "Generate a compiled js from a selected set of other javascript files, solving the dependencies.",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "repository": {
     "url": "https://github.com/augusto-altman/selectizer"
   },
