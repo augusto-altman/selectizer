@@ -8,4 +8,6 @@ define(["ajaxGet", "a_"], function(ajaxGet, a_) {
     //Independant code code code
 
     a_.callY = callYApi;
+
+    return callXApi;
 });

@@ -10,4 +10,6 @@ define(["ajaxGet", "utils/ajaxPost", "a_"], function(ajaxGet, ajaxPost, a_) {
     //Independant code code code
 
     a_.callX = callXApi;
+
+    return callXApi;
 });

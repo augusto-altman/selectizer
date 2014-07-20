@@ -3,7 +3,11 @@
         "parser": "helpers/parser",
         "internalB": "variables/internalB"
     },
-    "dependencies": [
+    "wrap": {
+        "start": ";(function(window, document, undefined){",
+        "end": "})(this, document);"
+    },
+    "modules": [
         "interpreter/execute"
     ]
 }

@@ -8,4 +8,6 @@ define(["parser", "internalB"], function(parser, internalB) {
     //independat code code code
 
     internalB.execute = exe;
+
+    return exe;
 });

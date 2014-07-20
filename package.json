@@ -1,12 +1,12 @@
 {
-  "author": "Altman Augusto",
+  "author": "Altman Quaranta Augusto",
   "name": "selectizer",
-  "description": "Generate a compiled js from a selected set of other javascript files, solving the dependencies.",
-  "version": "0.1.8",
+  "description": "Selectizer is a build tool made for [Node.js](http://nodejs.org/) that compile javascript projects. It allows the developer to divide an entire project into small javascript files (modules) and then select what pieces of code to include in a specific build, resolving the dependencies automatically.",
+  "version": "0.1.9",
   "repository": {
     "url": "https://github.com/augusto-altman/selectizer"
   },
-  "main": "./lib/selectizer",
+  "main": "./dist/lib/selectizer",
   "keywords": [
     "modularization",
     "modules",
@@ -18,7 +18,7 @@
     "build tool"
   ],
   "bin": {
-    "selectizer": "./bin/selectizer"
+    "selectizer": "./dist/bin/selectizer"
   },
   "dependencies": {
     "mkdirp": "~0.3.4",
@@ -26,5 +26,12 @@
   },
   "engines": {
     "node": "*"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.0"
   }
 }

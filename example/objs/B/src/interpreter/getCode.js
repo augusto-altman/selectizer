@@ -4,4 +4,6 @@ define([], function() {
         console.log("GETCODE!");
     }
     //independant code code code
+
+    return getCode;
 });
