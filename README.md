@@ -113,7 +113,11 @@ gen('A', 'node_modules/selectizer/example/objs');
 
 After execute this stuff you will find the build in _node_modules/selectizer/example/objs/A/build/A.js_
 
-Contact me
+License
+-------------
+Copyright (c) 2014 - 2014 Augusto Altman Quaranta <augusto.altman@gmail.com> and Matias Carraza <matiascarranza@gmail.com> et al Licensed under the MIT license.
+
+Contact us
 -------------
 
-**e-mail**: augusto.altman@gmail.com
+**e-mail**: augusto.altman@gmail.com, matiascarranza@gmail.com
