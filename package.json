@@ -1,8 +1,8 @@
 {
   "author": "Altman Quaranta Augusto",
   "name": "selectizer",
-  "description": "Selectizer is a build tool made for [Node.js](http://nodejs.org/) that compile javascript projects. It allows the developer to divide an entire project into small javascript files (modules) and then select what pieces of code to include in a specific build, resolving the dependencies automatically.",
-  "version": "0.1.9",
+  "description": "Selectizer is a build tool made for Node.js that compile javascript projects. It allows to divide an entire project into small javascript files (modules) and then select what pieces of code to include in a specific build.",
+  "version": "0.1.12",
   "repository": {
     "url": "https://github.com/augusto-altman/selectizer"
   },
