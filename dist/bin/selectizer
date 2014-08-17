@@ -4,13 +4,17 @@
 var path = require('path'),
     fs = require('fs'),
     lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib/'),
-    gen = require(lib + '/selectizer.min.js');
+    genHandler = require(lib + '/selectizer.min.js'),
+    handler = genHandler(process.argv[2], process.argv[3]);
 
-gen(process.argv[2], process.argv[3], function(a){
-    if(!! a.success){
-        a.generate();
-    }
-    else{
-        console.log(a.data.errorMsg);
-    }
-});
+if (!!handler.success) {
+    handler.generate(function(a) {
+        if (!a.success) {
+            console.log(a.data.errorMsg);
+        } else {
+            console.log("Build generated");
+        }
+    });
+} else {
+    console.log(handler.data.errorMsg);
+}
