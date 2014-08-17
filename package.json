@@ -1,8 +1,11 @@
 {
-  "author": "Altman Quaranta Augusto",
+  "author": {
+    "name": "Altman Quaranta Augusto",
+    "email": "augusto.altman@gmail.com"
+  },
   "name": "selectizer",
   "description": "Selectizer is a build tool made for Node.js that compile javascript projects. It allows to divide an entire project into small javascript files (modules) and then select what pieces of code to include in a specific build.",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "repository": {
     "url": "https://github.com/augusto-altman/selectizer.git"
   },
@@ -10,7 +13,7 @@
     "name": "Matias Carranza",
     "email": "matiascarranza@gmail.com"
   }],
-  "main": "./dist/lib/selectizer",
+  "main": "./dist/lib/selectizer.min",
   "keywords": [
     "modularization",
     "modules",
@@ -19,10 +22,13 @@
     "dependencies",
     "select",
     "file selection",
+    "modules selection",
+    "build customization",
+    "cutomization",
     "build tool"
   ],
   "bin": {
-    "selectizer": "./dist/bin/selectizer.min.js"
+    "selectizer": "./dist/bin/selectizer"
   },
   "dependencies": {
     "mkdirp": "~0.3.4",
@@ -37,5 +43,6 @@
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.5.0"
-  }
+  },
+  "license" : "MIT"
 }
