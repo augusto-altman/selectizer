@@ -1,0 +1,5 @@
+.git*
+src/
+test/
+example/objs/*/build
+gruntfile.js
