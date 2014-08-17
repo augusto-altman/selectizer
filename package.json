@@ -18,7 +18,7 @@
     "build tool"
   ],
   "bin": {
-    "selectizer": "./dist/bin/selectizer.min"
+    "selectizer": "./dist/bin/selectizer.min.js"
   },
   "dependencies": {
     "mkdirp": "~0.3.4",
