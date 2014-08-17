@@ -5,7 +5,7 @@
   },
   "name": "selectizer",
   "description": "Selectizer is a build tool made for Node.js that compile javascript projects. It allows to divide an entire project into small javascript files (modules) and then select what pieces of code to include in a specific build.",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "repository": {
     "url": "https://github.com/augusto-altman/selectizer.git"
   },
