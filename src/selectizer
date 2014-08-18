@@ -12,7 +12,7 @@ if (!!handler.success) {
         if (!a.success) {
             console.log(a.data.errorMsg);
         } else {
-            console.log("Build generated");
+            console.log(a.data.msg);
         }
     });
 } else {

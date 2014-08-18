@@ -96,6 +96,12 @@ var GenerationHandler = (function() {
 					fs.writeFileSync(this.data.requireJSOptions.out, mod, 'utf8');
 
 					fs.unlinkSync(this.data.paths.build + this.data.object + '-init.js');
+					callback({
+						success: true,
+						data: {
+							msg: "Object created in " + this.data.paths.build
+						}
+					});
 				}).bind(this), function(err) {
 					fs.unlinkSync(this.data.paths.build + this.data.object + '-init.js');
 					callback({
