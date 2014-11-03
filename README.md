@@ -1,5 +1,10 @@
-Selectizer build tool
+Selectizer is deprecated! 
 =============
+
+We have developed a much stable, much usable, much maintainable tool called [AlbanilJS](https://github.com/augusto-altman/AlbanilJS). [AlbanilJS](https://github.com/augusto-altman/AlbanilJS) will replace Selectizer forever, so we won't mantain selectizer any more. If you find yourself here for the first time please go and try [AlbanilJS](https://github.com/augusto-altman/AlbanilJS) directly. If you are already using selectizer in your project please consider to migrate to [AlbanilJS](https://github.com/augusto-altman/AlbanilJS)
+
+Selectizer build tool
+-------------
 
 Based on the [Modernizr](https://github.com/Modernizr/Modernizr) build process, Selectizer is a build tool made for [Node.js](http://nodejs.org/) that compile javascript projects. It allows the developer to divide an entire project into small javascript files (modules) and then select what pieces of code to include in a specific _build_, resolving the dependencies automatically (using the [Requirejs's optimization tool](http://requirejs.org/docs/optimization.html)). The final effect is to get all the selected files (and its dependencies) concatenated into one big deliverable javascript.
 
